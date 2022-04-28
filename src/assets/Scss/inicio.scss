@@ -1,0 +1,170 @@
+$color-block1: rgb(172, 172, 172);
+
+@mixin bloque1 {
+    width: 100%;
+    height: 300px;
+    background-color:$color-block1 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin bloque2 {
+    width: 100%;
+    height: 300px;
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-home{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        width: 100%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        span{
+            color: red;
+            font-weight: bold;
+        }
+    }
+}
+
+.inicio-bloque-1{
+    @include bloque1();
+    h2{
+        width: 50%;
+        margin-left: 100px;
+    }
+    p{
+        width: 50%;
+        margin-left: 100px;
+    }
+}
+
+.inicio-bloque-2{
+    @include bloque2();
+    h2{
+        width: 60%;
+        margin-left: 100px;
+    }
+    p{
+        width: 60%;
+        margin-left: 100px;
+    }
+}
+
+/*RESPONSIVE*/
+@media(max-width:1160px){
+    .first-home{
+        .world-image{
+            width: 70%;
+        }
+    }
+}
+
+@media(max-width:930px){
+    .first-home{
+        h2{
+            font-size: 17px;
+        }
+    }
+    .inicio-bloque-1{
+        height: 250px;
+        h2{
+            font-size: 17px;
+        }
+    }
+    .inicio-bloque-2{
+        height: 250px;
+        h2{
+            font-size: 17px;
+        }
+    }
+}
+
+@media(max-width:870){
+    .inicio-bloque-1{
+        p{
+            text-align: justify;
+        }
+    }
+    .inicio-bloque-2{
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .first-home{
+        h2{
+            font-size: 14px;
+        }
+    }
+    .inicio-bloque-1{
+        p{
+            font-size: 12px;
+        }
+    }
+    .inicio-bloque-2{
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+@media(max-width:650px){
+    .inicio-bloque-1{
+        height: 200px;
+        h2{
+            font-size: 14px;
+        }
+    }
+    .inicio-bloque-2{
+        height: 200px;
+        h2{
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width:530px){
+    .first-home{
+        h2{
+            font-size: 10px;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .inicio-bloque-1{
+        h2{
+            width: 60%;
+            margin-left: 60px;
+        }
+        p{
+            width: 60%;
+            margin-left: 60px;
+        }
+    }
+    
+    .inicio-bloque-2{
+        h2{
+            width: 60%;
+            margin-left: 60px;
+        }
+        p{
+            width: 60%;
+            margin-left: 60px;
+        }
+    }
+}
+
+
