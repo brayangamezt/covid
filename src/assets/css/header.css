@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#date-container{
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+}
+
+#date-container #main-date #weather-header #city-name{
+    font-style: italic;
+}
+
+#date-container #main-date{
+    flex-basis: 50%;
+    height: inherit;
+    display: flex;
+}
+
+#date-container #main-date #weather-header{
+    height: inherit;
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#date-container #main-date #weather-header .city-icon{
+    margin-right: 10px;
+}
+
+#date-container #main-date #weather-header #city-name{
+    margin-right: 10px;
+}
+
+#date-container #main-date #weather-header .city-weather{
+    margin-right: 10px;
+}
+
+#date-container #main-date #date-header{
+    flex-basis: 40%;
+    margin-left: 20px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+#date-container #main-date #breaking-new{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%;
+    background-color: red;
+    color: white;
+}
+
+#date-container #main-date #date-header .date{
+    margin-left: 10px;
+    font-style: italic;
+}
+
+#date-container #clock-header{
+    display: flex;
+    align-items: center;
+}
+#date-container #clock-header #reloj{
+    margin-left: 10px;
+}
+
+
+/*RESPONSIVEE*/
+@media(max-width:1080px){
+    #date-container #main-date #breaking-new{
+        flex-basis: 30%;
+    }
+    #date-container #main-date{
+        flex-basis: 70%;
+    }
+}
+
+@media(max-width:800px){
+    #date-container #main-date #weather-header #city-name{
+        font-size: 12px;
+    }
+    #date-container #main-date #weather-header #city-weather{
+        font-size: 12px;
+    }
+    #date-container #main-date #date-header .date{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:650px){
+    #date-container #clock-header{
+        display: none;
+    }
+    #date-container #main-date{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width:465px){
+    #date-container #main-date #breaking-new{
+        display: none;
+    }
+}
+
+@media(max-width:400px){
+    #date-container #main-date #weather-header{
+        flex-basis: 50%;
+    }
+    #date-container #main-date #date-header{
+        flex-basis: 50%;
+    }
+    #date-container #main-date #weather-header .city-icon{
+        font-size: 12px;
+    }
+    #date-container #main-date #weather-header .city-weather{
+        font-size: 12px;
+    }
+    #date-container #main-date #date-header #calendar{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:330px){
+    #date-container #main-date #weather-header .city-icon{
+        margin-right: 2px;
+    }
+    
+    #date-container #main-date #weather-header #city-name{
+        margin-right: 2px;
+    }
+    
+    #date-container #main-date #weather-header .city-weather{
+        margin-right: 2px;
+    }
+    #date-container #main-date #date-header .date{
+        margin-left: 2px;
+        font-style: italic;
+    }
+}
+
+
